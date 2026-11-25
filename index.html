@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Favicon -->
+  <link
+    type="image/png"
+    sizes="32x32"
+    rel="icon"
+    href="images.png"
+  />
+
+  <!-- CSS Styling -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Font Awesome -->
+  <script
+    src="https://kit.fontawesome.com/96d9cdf324.js"
+    crossorigin="anonymous">
+  </script>
+
+  <title>ITSM Ticket Tool | Dashboard</title>
+</head>
+
+<body>
+
+  <!-- Start of Navigation -->
+  <nav id="navigation">
+
+    <a href="index.html" id="nav_brand">
+      <h1 id="nav_title">ITSM Ticketing Tool</h1>
+    </a>
+
+    <div class="nav_container">
+
+      <label for="theme_check" class="themebtn">
+        <button class="dark_mode" id="theme_check">
+          <i class="fa-regular fa-moon"></i>
+        </button>
+      </label>
+
+      <input type="checkbox" name="checkbox" id="check" />
+
+      <label for="check" class="menubtn">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </label>
+
+      <ul class="nav_list">
+
+        <h2>Ticket Administration</h2>
+
+        <li class="nav_link">
+          <a href="create.html">
+            <i class="fa-regular fa-clone"></i>
+            Create New Ticket
+          </a>
+        </li>
+
+        <li class="nav_link">
+          <a href="view.html">
+            <i class="fa-regular fa-eye"></i>
+            View Ticket
+          </a>
+        </li>
+
+        <li class="nav_link">
+          <a href="search.html">
+            <i class="fa-regular fa-folder-open"></i>
+            Search Ticket
+          </a>
+        </li>
+
+        <li class="nav_link">
+          <a href="update.html">
+            <i class="fa-regular fa-pen-to-square"></i>
+            Update Ticket
+          </a>
+        </li>
+
+        <li class="nav_link">
+          <a href="delete.html">
+            <i class="fa-regular fa-rectangle-xmark"></i>
+            Delete Ticket
+          </a>
+        </li>
+
+        <h2>Analytics and Insights</h2>
+
+        <li class="nav_link">
+          <a href="summary.html">
+            <i class="fa-regular fa-chart-bar"></i>
+            Generate Ticket Summary
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+  </nav>
+  <!-- End of Navigation -->
+
+
+  <!-- Start of Main Container -->
+  <main>
+
+    <section id="dashboard">
+
+      <!-- Dashboard Header -->
+      <div id="header">
+
+        <h1>Dashboard</h1>
+
+        <a href="create.html">
+          <button type="button">
+            <i class="fa-solid fa-plus"></i>
+            Create Ticket
+          </button>
+        </a>
+
+      </div>
+
+
+      <!-- Dashboard Summary Cards -->
+      <section id="grid-cards">
+
+        <div class="cards total">
+          <p>Total Tickets</p>
+          <h1>24</h1>
+        </div>
+
+        <div class="cards pending">
+          <p>Open Tickets</p>
+          <h1>08</h1>
+        </div>
+
+        <div class="cards in_progress">
+          <p>In Progress</p>
+          <h1>10</h1>
+        </div>
+
+        <div class="cards resolved">
+          <p>Resolved</p>
+          <h1>06</h1>
+        </div>
+
+      </section>
+
+
+      <!-- Start of Recent Tickets -->
+      <section class="recent_tickets">
+
+        <h1>Recent Tickets</h1>
+
+        <div class="ticket_item">
+
+          <div class="ticket_info">
+            <h2>INC123456</h2>
+            <p>Network connection issue</p>
+          </div>
+
+          <span class="ticket_status in_progress">
+            In Progress
+          </span>
+
+        </div>
+
+        <hr />
+
+        <div class="ticket_item">
+
+          <div class="ticket_info">
+            <h2>INC123457</h2>
+            <p>Unable to access email</p>
+          </div>
+
+          <span class="ticket_status pending">
+            Pending
+          </span>
+
+        </div>
+
+        <hr />
+
+        <div class="ticket_item">
+
+          <div class="ticket_info">
+            <h2>INC123458</h2>
+            <p>Computer hardware</p>
+          </div>
+
+          <span class="ticket_status resolved">
+            Resolved
+          </span>
+
+        </div>
+
+        <hr />
+
+        <a href="#" class="view_all">
+          View All Tickets
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+      </section>
+      <!-- End of Recent Tickets -->
+
+    </section>
+
+  </main>
+  <!-- End of Main Container -->
+
+
+  <!-- Start of Footer
+  <footer id="footer">
+
+    <div class="copyright">
+      <h4>&copy; Copyright 2024 All rights reserved</h4>
+    </div>
+
+  </footer> -->
+
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
